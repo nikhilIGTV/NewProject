@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator -JS </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calc">
+        <div class="container">
+            <input type ='text' class="inputEq" readonly><br>
+            <input type ='text' class="inputBox" onkeypress="getNum()" value="0"><br>
+            
+            <button onclick="clearInput()"  class="btn-op btn-clear">C</button>
+            <button onclick="showHistory()"  class="btn-op btn-history">H</button>
+            <br>
+
+            <button onclick="setVal('7')"  class="btn-input">7</button>
+            <button onclick="setVal('8')"  class="btn-input">8</button>
+            <button onclick="setVal('9')"  class="btn-input">9</button>
+            <button onclick="setVal('+')"  class="btn-op">+</button><br>
+
+            <button onclick="setVal('4')"  class="btn-input">4</button>
+            <button onclick="setVal('5')"  class="btn-input">5</button>
+            <button onclick="setVal('6')"  class="btn-input">6</button>
+            <button onclick="setVal('-')"  class="btn-op">-</button><br>
+
+            <button onclick="setVal('1')"  class="btn-input">1</button>
+            <button onclick="setVal('2')"  class="btn-input">2</button>
+            <button onclick="setVal('3')"  class="btn-input">3</button>
+            <button onclick="setVal('*')"  class="btn-op">*</button><br>
+
+            <button onclick="setVal('0')"  class="btn-input">0</button>
+            <button onclick="getAns()"  class="btn-input">=</button>
+            <button onclick="setVal('.')"  class="btn-input">.</button>
+            <button onclick="setVal('/')"  class="btn-op">/</button><br>
+
+
+        </div>
+        <div class ='history'>
+         <div class="btn-remove" onclick="removeHistory()"> X </div>
+         <div class="history-div"></div>   
+
+        </div>
+
+
+
+    </div>
+<script src="js/index.js"></script>
+
+</body>
+</html>
